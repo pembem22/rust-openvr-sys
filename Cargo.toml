@@ -12,6 +12,7 @@ description = "Raw unsafe system binding for openvr"
 repository = "https://github.com/rust-openvr/rust-openvr-sys"
 keywords = ["vr", "vive", "steamvr"]
 categories = [ "hardware-support", "external-ffi-bindings" ]
+edition = "2021"
 
 exclude = [
     "openvr/samples/*",
@@ -26,7 +27,7 @@ maintenance = { status = "passively-maintained" }
 
 [build-dependencies]
 cmake = "0.1"
-bindgen = { version = "0.49", optional = true }
+bindgen = { version = "0.70", optional = true }
 
 [lib]
 name = "openvr_sys"
